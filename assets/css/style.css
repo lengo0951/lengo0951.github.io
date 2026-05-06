@@ -350,18 +350,20 @@ main > section + section { padding-top: 0; }
 .pub-year:first-of-type { margin-top: var(--s-16); }
 
 .pub {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: var(--s-24);
+  display: block;
   padding: var(--s-16) 0;
   border-bottom: 1px solid var(--border);
 }
 .pub:last-child { border-bottom: none; }
 
+/* Critical: must beat .pub specificity (0,0,1,0) so [hidden] year-filter actually hides */
+.pub[hidden], .pub-year[hidden] { display: none !important; }
+
 .pub-thumb {
-  width: 160px;
-  height: 100px;
-  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: var(--s-12);
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   background: var(--bg-subtle);
@@ -552,11 +554,7 @@ main > section + section { padding-top: 0; }
   .news-list li { flex-direction: column; gap: var(--s-4); }
   .news-date { width: auto; }
 
-  .pub {
-    grid-template-columns: 1fr;
-    gap: var(--s-12);
-  }
-  .pub-thumb { width: 100%; height: 180px; }
+  /* .pub already display:block above; nothing to override at mobile */
 
   .honor-list li { flex-direction: column; gap: var(--s-4); }
   .honor-year { width: auto; }

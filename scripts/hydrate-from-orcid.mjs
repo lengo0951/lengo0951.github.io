@@ -192,7 +192,11 @@ function renderBadges(pub, idx) {
 }
 
 function renderArticle(pub, idx, namePatterns) {
-  const thumb = (pub.extras && pub.extras.thumb) || FALLBACK_THUMBS[idx % FALLBACK_THUMBS.length];
+  // Only render a thumbnail if the user has explicitly opted in via extras (no auto-placeholders).
+  const thumb = pub.extras && pub.extras.thumb;
+  const thumbHTML = thumb
+    ? `\n        <img class="pub-thumb" src="${escAttr(thumb)}" alt="Thumbnail for: ${escAttr(pub.title)}" loading="lazy" />`
+    : '';
   const flag = pub.extras && pub.extras.flag
     ? `\n          <span class="pub-badge-flag">${escHTML(pub.extras.flag)}</span>`
     : '';
@@ -204,8 +208,7 @@ function renderArticle(pub, idx, namePatterns) {
     : '';
   const badges = renderBadges(pub, idx);
 
-  return `      <article class="pub" data-year="${escAttr(pub.year)}">
-        <img class="pub-thumb" src="${escAttr(thumb)}" alt="Thumbnail for: ${escAttr(pub.title)}" loading="lazy" />
+  return `      <article class="pub" data-year="${escAttr(pub.year)}">${thumbHTML}
         <div class="pub-body">${flag}
           <h4 class="pub-title">${escHTML(pub.title)}</h4>${authors}${venue}${badges}
         </div>
