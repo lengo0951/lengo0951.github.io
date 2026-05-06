@@ -1,6 +1,16 @@
 {
-  "10.1016/j.eswa.2026.132546": {
-    "flag": "Highlighted",
-    "code": "https://github.com/example/autowafuzzer"
+  "_comment": "Map DOI → optional extras for that paper. ORCID does not store these. Empty by default.",
+  "_example": {
+    "10.1016/j.eswa.2026.132546": {
+      "arxiv":   "https://arxiv.org/abs/2401.12345",
+      "code":    "https://github.com/youruser/repo",
+      "project": "https://yourproject.dev",
+      "slides":  "https://yoursite/slides.pdf",
+      "video":   "https://youtu.be/...",
+      "bibtex":  "https://yoursite/paper.bib",
+      "hf":      "https://huggingface.co/datasets/...",
+      "thumb":   "assets/img/pub-mypaper.png",
+      "flag":    "Best Paper"
+    }
   }
 }
