@@ -23,7 +23,10 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const ORCID_API = 'https://pub.orcid.org/v3.0';
-const UA = 'scientist-homepage-hydrator/1.0 (+https://github.com/)';
+const CROSSREF_API = 'https://api.crossref.org/works';
+const CROSSREF_CACHE_PATH = 'data/crossref-cache.json';
+const CROSSREF_THROTTLE_MS = 220;   // stay under 5 req/sec public pool
+const UA = 'scientist-homepage-hydrator/1.0 (+https://github.com/lengo0951; mailto:lengo.vq@gmail.com)';
 const MARKER_START = '<!-- ORCID:PUBS:START -->';
 const MARKER_END = '<!-- ORCID:PUBS:END -->';
 const FALLBACK_THUMBS = [
@@ -72,6 +75,67 @@ async function orcidGET(path) {
   });
   if (!res.ok) throw new Error(`ORCID ${res.status} on ${path}`);
   return res.json();
+}
+
+/* ---------- Crossref enrichment (book-chapter / conference-paper venues) ---------- */
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function fetchCrossrefVenue(doi) {
+  try {
+    const res = await fetch(`${CROSSREF_API}/${encodeURIComponent(doi)}`, {
+      headers: { Accept: 'application/json', 'User-Agent': UA },
+    });
+    if (!res.ok) return { venue: null, publisher: null, status: res.status };
+    const data = await res.json();
+    const m = data.message || {};
+    const event = (m.event || {}).name;
+    const containers = m['container-title'] || [];
+    // Conferences: prefer event.name when present (cleaner than "Proceedings of …").
+    // Books: container-title last item is most specific (e.g. ["LNCS","Network and System Security"] → book name).
+    const venue = event || containers[containers.length - 1] || containers[0] || null;
+    return { venue, publisher: m.publisher || null, crossrefType: m.type || null };
+  } catch (e) {
+    return { venue: null, publisher: null, error: String(e.message || e) };
+  }
+}
+
+async function enrichVenuesViaCrossref(pubs) {
+  let cache = {};
+  try { cache = readJSON(CROSSREF_CACHE_PATH); } catch { /* first run, no cache yet */ }
+
+  let hits = 0, fetched = 0, missing = 0, applied = 0;
+  for (const p of pubs) {
+    if (!p.doi) continue;
+    let entry = cache[p.doi];
+    if (!entry) {
+      entry = await fetchCrossrefVenue(p.doi);
+      entry.fetchedAt = new Date().toISOString();
+      cache[p.doi] = entry;
+      fetched++;
+      await sleep(CROSSREF_THROTTLE_MS);
+    } else {
+      hits++;
+    }
+    if (entry.venue) {
+      // Prefer ORCID journal-title if it's specific, else use Crossref.
+      // Crossref overrides only when ORCID is empty OR is a generic series name (e.g. just "Lecture Notes in Computer Science").
+      const orcidGeneric = !p.venue || /^lecture notes in computer science$/i.test(p.venue);
+      if (orcidGeneric) {
+        p.venue = entry.venue;
+        applied++;
+      }
+    } else {
+      missing++;
+    }
+  }
+
+  try {
+    writeFileSync(resolve(CROSSREF_CACHE_PATH), JSON.stringify(cache, null, 2) + '\n', 'utf8');
+  } catch (e) {
+    warn(`could not write ${CROSSREF_CACHE_PATH}: ${e.message}`);
+  }
+  log(`crossref: cache-hit=${hits} fetched=${fetched} venue-missing=${missing} applied-to-pubs=${applied}`);
 }
 
 async function fetchAllWorks(orcid) {
@@ -280,6 +344,11 @@ async function main() {
     const ex = extras[p.doi] || extras[p.doi.toLowerCase()];
     if (ex) { p.extras = ex; matched++; }
   }
+
+  // Enrich venue from Crossref for papers where ORCID didn't supply journal-title
+  // (mostly book-chapter / conference-paper). Cached to data/crossref-cache.json.
+  await enrichVenuesViaCrossref(pubs);
+
   // Sort year desc, then title asc
   pubs.sort((a, b) => b.year.localeCompare(a.year) || a.title.localeCompare(b.title));
 

@@ -1,0 +1,344 @@
+{
+  "10.1016/j.eswa.2026.132546": {
+    "venue": "Expert Systems with Applications",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:42.041Z"
+  },
+  "10.1016/j.jnca.2026.104502": {
+    "venue": "Journal of Network and Computer Applications",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:42.541Z"
+  },
+  "10.1016/j.infsof.2026.108012": {
+    "venue": "Information and Software Technology",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:43.037Z"
+  },
+  "10.1016/j.infsof.2026.108019": {
+    "venue": "Information and Software Technology",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:43.558Z"
+  },
+  "10.1016/j.jss.2025.112642": {
+    "venue": "Journal of Systems and Software",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:44.164Z"
+  },
+  "10.2139/ssrn.6381010": {
+    "venue": null,
+    "publisher": "Elsevier BV",
+    "crossrefType": "posted-content",
+    "fetchedAt": "2026-05-06T05:27:44.704Z"
+  },
+  "10.1007/978-981-95-6419-4_13": {
+    "venue": "Network and System Security",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:45.191Z"
+  },
+  "10.1007/978-981-95-6419-4_11": {
+    "venue": "Network and System Security",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:45.688Z"
+  },
+  "10.1007/978-981-95-6419-4_15": {
+    "venue": "Network and System Security",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:46.187Z"
+  },
+  "10.1142/S2196888825500095": {
+    "venue": "Vietnam Journal of Computer Science",
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:46.698Z"
+  },
+  "10.1145/3731763.3731795": {
+    "venue": "ICIIT 2025: 2025 10th International Conference on Intelligent Information Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:47.220Z"
+  },
+  "10.1007/978-981-96-4285-4_35": {
+    "venue": "Information and Communication Technology",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:47.749Z"
+  },
+  "10.1007/978-981-96-4285-4_31": {
+    "venue": "Information and Communication Technology",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:48.287Z"
+  },
+  "10.1007/978-981-96-4285-4_30": {
+    "venue": "Information and Communication Technology",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:48.806Z"
+  },
+  "10.1007/978-981-96-6008-7_22": {
+    "venue": "Intelligent Information and Database Systems",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:49.316Z"
+  },
+  "10.1007/978-981-96-4291-5_4": {
+    "venue": "Information and Communication Technology",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:49.844Z"
+  },
+  "10.1007/978-981-96-4285-4_28": {
+    "venue": "Information and Communication Technology",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:50.367Z"
+  },
+  "10.1007/978-981-96-4291-5_12": {
+    "venue": "Information and Communication Technology",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:50.977Z"
+  },
+  "10.1007/978-981-96-4285-4_33": {
+    "venue": "Information and Communication Technology",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:51.463Z"
+  },
+  "10.1007/s11227-025-07198-7": {
+    "venue": "The Journal of Supercomputing",
+    "publisher": "Springer Science and Business Media LLC",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:51.952Z"
+  },
+  "10.1016/j.iot.2024.101397": {
+    "venue": "Internet of Things",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:52.472Z"
+  },
+  "10.1016/j.jisa.2024.103916": {
+    "venue": "Journal of Information Security and Applications",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:53.015Z"
+  },
+  "10.1142/S2196888824500039": {
+    "venue": "Vietnam Journal of Computer Science",
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:53.515Z"
+  },
+  "10.1145/3654522.3654577": {
+    "venue": "ICIIT 2024: 2024 9th International Conference on Intelligent Information Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:54.034Z"
+  },
+  "10.1109/ACCESS.2024.3421989": {
+    "venue": "IEEE Access",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:54.619Z"
+  },
+  "10.1109/ACCESS.2024.3436812": {
+    "venue": "IEEE Access",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:27:55.137Z"
+  },
+  "10.1007/978-3-031-67357-3_18": {
+    "venue": "Industrial Networks and Intelligent Systems",
+    "publisher": "Springer Nature Switzerland",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:55.627Z"
+  },
+  "10.1007/978-981-97-0669-3_29": {
+    "venue": "Computational Data and Social Networks",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:56.135Z"
+  },
+  "10.1007/978-981-97-5504-2_21": {
+    "venue": "Proceedings of the International Conference on Intelligent Systems and Networks",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:27:56.666Z"
+  },
+  "10.1145/3628797.3628996": {
+    "venue": "SOICT 2023: The 12th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:57.199Z"
+  },
+  "10.1145/3628797.3628942": {
+    "venue": "SOICT 2023: The 12th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:57.704Z"
+  },
+  "10.1145/3628797.3628945": {
+    "venue": "SOICT 2023: The 12th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:58.226Z"
+  },
+  "10.1145/3628797.3628950": {
+    "venue": "SOICT 2023: The 12th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:58.757Z"
+  },
+  "10.1145/3628797.3629003": {
+    "venue": "SOICT 2023: The 12th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:59.277Z"
+  },
+  "10.1145/3628797.3628982": {
+    "venue": "SOICT 2023: The 12th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:27:59.833Z"
+  },
+  "10.1016/j.iot.2023.100966": {
+    "venue": "Internet of Things",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:28:00.328Z"
+  },
+  "10.1016/j.jisa.2023.103472": {
+    "venue": "Journal of Information Security and Applications",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:28:00.849Z"
+  },
+  "10.1007/978-3-031-46749-3_21": {
+    "venue": "Intelligence of Things: Technologies and Applications",
+    "publisher": "Springer Nature Switzerland",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:01.387Z"
+  },
+  "10.1007/978-981-99-7032-2_2": {
+    "venue": "Information Security Practice and Experience",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:01.906Z"
+  },
+  "10.1007/978-3-031-46749-3_26": {
+    "venue": "Intelligence of Things: Technologies and Applications",
+    "publisher": "Springer Nature Switzerland",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:02.440Z"
+  },
+  "10.1007/978-981-99-7032-2_32": {
+    "venue": "Information Security Practice and Experience",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:02.947Z"
+  },
+  "10.1145/3568562.3568631": {
+    "venue": "SoICT 2022: The 11th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:03.474Z"
+  },
+  "10.1145/3568562.3568665": {
+    "venue": "SoICT 2022: The 11th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:03.994Z"
+  },
+  "10.1145/3568562.3568629": {
+    "venue": "SoICT 2022: The 11th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:04.538Z"
+  },
+  "10.1145/3568562.3568636": {
+    "venue": "SoICT 2022: The 11th International Symposium on Information and Communication Technology",
+    "publisher": "ACM",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:05.046Z"
+  },
+  "10.1016/j.jisa.2021.103080": {
+    "venue": "Journal of Information Security and Applications",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:28:05.606Z"
+  },
+  "10.1007/978-3-031-21280-2_20": {
+    "venue": "Information Security Practice and Experience",
+    "publisher": "Springer International Publishing",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:06.102Z"
+  },
+  "10.1109/nics54270.2021.9701450": {
+    "venue": "2021 8th NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publisher": "IEEE",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:06.620Z"
+  },
+  "10.1109/nics54270.2021.9701463": {
+    "venue": "2021 8th NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publisher": "IEEE",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:07.278Z"
+  },
+  "10.1109/icmlant53170.2021.9690542": {
+    "venue": "2021 IEEE International Conference on Machine Learning and Applied Network Technologies (ICMLANT)",
+    "publisher": "IEEE",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:07.762Z"
+  },
+  "10.1109/icmlant53170.2021.9690540": {
+    "venue": "2021 IEEE International Conference on Machine Learning and Applied Network Technologies (ICMLANT)",
+    "publisher": "IEEE",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:08.247Z"
+  },
+  "10.1016/j.cose.2021.102367": {
+    "venue": "Computers &amp; Security",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-05-06T05:28:08.734Z"
+  },
+  "10.1109/rivf51545.2021.9642111": {
+    "venue": "2021 RIVF International Conference on Computing and Communication Technologies (RIVF)",
+    "publisher": "IEEE",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:09.230Z"
+  },
+  "10.1007/978-3-030-92708-0_23": {
+    "venue": "Network and System Security",
+    "publisher": "Springer International Publishing",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:09.715Z"
+  },
+  "10.1007/978-3-030-69514-9_11": {
+    "venue": "Smart Grid and Internet of Things",
+    "publisher": "Springer International Publishing",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:10.226Z"
+  },
+  "10.1007/978-3-030-92708-0_8": {
+    "venue": "Network and System Security",
+    "publisher": "Springer International Publishing",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-05-06T05:28:10.802Z"
+  },
+  "10.1109/RIVF48685.2020.9140739": {
+    "venue": "2020 RIVF International Conference on Computing and Communication Technologies (RIVF)",
+    "publisher": "IEEE",
+    "crossrefType": "proceedings-article",
+    "fetchedAt": "2026-05-06T05:28:11.292Z"
+  }
+}
