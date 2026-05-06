@@ -208,9 +208,14 @@ function renderArticle(pub, idx, namePatterns) {
     : '';
   const badges = renderBadges(pub, idx);
 
+  // Title links to DOI when available (most academic sites do this — title IS the click target).
+  const titleHTML = pub.doi
+    ? `<a href="https://doi.org/${escAttr(pub.doi)}" target="_blank" rel="noopener">${escHTML(pub.title)}</a>`
+    : escHTML(pub.title);
+
   return `      <article class="pub" data-year="${escAttr(pub.year)}">${thumbHTML}
         <div class="pub-body">${flag}
-          <h4 class="pub-title">${escHTML(pub.title)}</h4>${authors}${venue}${badges}
+          <h4 class="pub-title">${titleHTML}</h4>${authors}${venue}${badges}
         </div>
       </article>`;
 }
