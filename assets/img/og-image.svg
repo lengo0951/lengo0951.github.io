@@ -7,9 +7,10 @@
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="80" y="80" width="6" height="80" fill="#1e4ba0"/>
-  <text x="120" y="140" font-family="ui-serif, 'Newsreader', Georgia, serif" font-size="64" font-weight="600" fill="#1a1d23">Scientist Homepage</text>
-  <text x="120" y="200" font-family="ui-sans-serif, 'Inter', system-ui, sans-serif" font-size="28" fill="#5a6068">A minimal personal site template for academic researchers</text>
-  <text x="120" y="540" font-family="ui-sans-serif, 'Inter', system-ui, sans-serif" font-size="20" fill="#8a8f97">Edit assets/img/og-image.svg · or replace with a PNG</text>
+  <text x="120" y="140" font-family="ui-serif, 'Newsreader', Georgia, serif" font-size="64" font-weight="600" fill="#1a1d23">Phan The Duy</text>
+  <text x="120" y="195" font-family="ui-sans-serif, 'Inter', system-ui, sans-serif" font-size="28" fill="#5a6068">Cybersecurity Researcher · PhD</text>
+  <text x="120" y="240" font-family="ui-sans-serif, 'Inter', system-ui, sans-serif" font-size="22" fill="#8a8f97">VNU-HCM University of Information Technology · Ho Chi Minh City</text>
+  <text x="120" y="540" font-family="ui-sans-serif, 'Inter', system-ui, sans-serif" font-size="20" fill="#8a8f97">lengo0951.github.io · Adversarial ML · Federated learning · Fuzzing</text>
   <g transform="translate(900,460)">
     <circle cx="0" cy="0" r="80" fill="#1e4ba0" opacity="0.12"/>
     <circle cx="0" cy="0" r="50" fill="#1e4ba0" opacity="0.18"/>

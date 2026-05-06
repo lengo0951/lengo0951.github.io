@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jane.doe.github.io/sitemap.xml
+Sitemap: https://lengo0951.github.io/sitemap.xml
