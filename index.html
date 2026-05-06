@@ -71,67 +71,87 @@
 
   <main id="main" tabindex="-1">
 
-    <!-- ============================ HERO ============================ -->
-    <section id="top" class="hero" aria-label="Introduction">
-      <img class="hero-photo"
-           src="assets/img/avatar.svg"
-           alt="Portrait of Phan The Duy"
-           width="180" height="180" />
+    <!-- ============================ TWO-COLUMN SHELL ============================ -->
+    <div id="top" class="shell">
 
-      <div class="hero-content">
-        <h1 class="hero-name">Phan The Duy</h1>
-        <p class="hero-title">Cybersecurity Researcher · PhD</p>
-        <p class="hero-affiliation">VNU-HCM University of Information Technology · Ho Chi Minh City, Vietnam</p>
-        <p class="hero-tagline"><em>Also known as Ryan · from the Mekong Delta</em></p>
-        <p class="hero-bio">
-          Cybersecurity researcher exploring adversarial machine learning,
-          federated-learning defense, and intelligent fuzzing — between code,
-          music, and wild things.
-        </p>
+      <!-- ============================ SIDEBAR ============================ -->
+      <aside class="sidebar" aria-label="Profile">
+        <img class="sidebar-photo"
+             src="assets/img/avatar.svg"
+             alt="Portrait of Phan The Duy"
+             width="200" height="200" />
+        <h2 class="sidebar-name">Phan The Duy</h2>
+        <p class="sidebar-affiliation">VNU-HCM University of Information Technology</p>
+        <p class="sidebar-tagline"><em>Ryan · from the Mekong Delta</em></p>
 
-        <ul class="social-row" aria-label="Contact and profiles">
+        <ul class="sidebar-contact" aria-label="Contact and profiles">
           <li>
-            <a href="mailto:phantheduy.ptd@gmail.com" aria-label="Email">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            </a>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Ho Chi Minh City, Vietnam</span>
           </li>
           <li>
-            <a href="https://orcid.org/0000-0002-5945-3712" target="_blank" rel="noopener" aria-label="ORCID">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.37 17.49H5.83V7.37h1.54zm-.77-11.4a.94.94 0 1 1 0-1.88.94.94 0 0 1 0 1.88zm12.92 7.04c0 2.4-1.76 4.36-4.46 4.36h-3.74V7.37h3.74c2.7 0 4.46 1.96 4.46 4.32zm-1.56 0c0-1.56-1-2.86-2.9-2.86h-2.18v5.76h2.18c1.9 0 2.9-1.34 2.9-2.9z"/></svg>
-            </a>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <a href="mailto:phantheduy.ptd@gmail.com">Email</a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/phantheduy/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.22 0z"/></svg>
-            </a>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.22 0z"/></svg>
+            <a href="https://www.linkedin.com/in/phantheduy/" target="_blank" rel="noopener">LinkedIn</a>
           </li>
           <li>
-            <!-- TODO: paste your Google Scholar profile URL here, e.g. https://scholar.google.com/citations?user=XXXXXXXXX -->
-            <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.73V17h2V9zm0 13.5L4 11v3.94L12 20l8-5.06V11z"/></svg>
-            </a>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.37 17.49H5.83V7.37h1.54zm-.77-11.4a.94.94 0 1 1 0-1.88.94.94 0 0 1 0 1.88zm12.92 7.04c0 2.4-1.76 4.36-4.46 4.36h-3.74V7.37h3.74c2.7 0 4.46 1.96 4.46 4.32zm-1.56 0c0-1.56-1-2.86-2.9-2.86h-2.18v5.76h2.18c1.9 0 2.9-1.34 2.9-2.9z"/></svg>
+            <a href="https://orcid.org/0000-0002-5945-3712" target="_blank" rel="noopener">ORCID</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.73V17h2V9zm0 13.5L4 11v3.94L12 20l8-5.06V11z"/></svg>
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
           </li>
         </ul>
-      </div>
-    </section>
+      </aside>
+
+      <!-- ============================ MAIN COLUMN ============================ -->
+      <div class="main-col">
 
     <!-- ============================ ABOUT ============================ -->
     <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading" class="section-heading">About</h2>
+      <h2 id="about-heading" class="section-heading">About Me</h2>
 
-      <h3 class="services-sub">About my work</h3>
       <p>
-        PhD researcher at <strong>VNU-HCM University of Information Technology</strong>.
-        My research lies in <strong>cybersecurity</strong> — focusing on
-        adversarial machine learning, federated-learning defense,
-        smart-contract vulnerability detection, and intelligent fuzzing for
-        web application firewalls. I publish in venues such as
+        I am a <strong>PhD researcher</strong> at VNU-HCM University of
+        Information Technology, working in cybersecurity. My work spans
+        intelligent fuzzing, federated-learning defense, smart-contract
+        vulnerability detection, and adversarial machine learning. I have
+        published over fifty peer-reviewed papers in venues such as
         <em>Expert Systems with Applications</em>,
         <em>Journal of Network and Computer Applications</em>, and
         <em>Information and Software Technology</em>.
       </p>
 
-      <h3 class="services-sub">About me, personally</h3>
+      <h3 class="section-subheading">Research Interests</h3>
+      <p>My research focuses on the intersection of AI and cybersecurity, organized around four themes:</p>
+      <ul class="research-list">
+        <li>
+          <strong>LLM-Powered Security</strong>: multi-agent and RAG-driven
+          systems for vulnerability discovery, intelligent fuzzing of web
+          application firewalls, and automated penetration testing.
+        </li>
+        <li>
+          <strong>Federated &amp; Distributed Learning Defense</strong>:
+          anti-poisoning mechanisms, autoencoder-based latent-space inspection,
+          and federated threat hunting in SDN-based IIoT environments.
+        </li>
+        <li>
+          <strong>Web &amp; Network Security</strong>: malware detection via
+          graph optimization of static features, intrusion detection robust to
+          adversarial samples, and phishing / scam-campaign analytics.
+        </li>
+        <li>
+          <strong>Smart Contract &amp; Blockchain Security</strong>: contextual
+          language models for reentrancy detection, multi-chain interoperable
+          systems, and zero-knowledge prescription management.
+        </li>
+      </ul>
+
+      <h3 class="section-subheading">Personal</h3>
       <p>
         My name is Ryan, and Duy in Vietnamese. I come from the South-western
         region of Vietnam (Mekong Delta), currently living in Ho Chi Minh City
@@ -153,11 +173,6 @@
         positive experience about what I've been through. Hopefully this will
         be something that can inspire you, make you believe in happiness, or
         at least let you find someone who has the same feeling as you.
-      </p>
-
-      <p class="meta">
-        <strong>Keywords:</strong> cybersecurity · adversarial ML · federated
-        learning · smart-contract security · fuzzing · web security
       </p>
     </section>
 
@@ -946,6 +961,9 @@
         <li><span class="contact-label">ORCID</span><a href="https://orcid.org/0000-0002-5945-3712" target="_blank" rel="noopener">0000-0002-5945-3712</a></li>
       </ul>
     </section>
+
+      </div><!-- /.main-col -->
+    </div><!-- /.shell -->
 
   </main>
 

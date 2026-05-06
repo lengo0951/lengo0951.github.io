@@ -572,3 +572,154 @@ main > section + section { padding-top: 0; }
   a { color: #000; text-decoration: underline; }
   main { max-width: 100%; }
 }
+
+/* =========================================================================
+   Two-column sticky sidebar redesign
+   Overrides earlier single-column hero layout. Main holds .shell which
+   is a grid of sticky sidebar + main content column.
+   ========================================================================= */
+
+main {
+  max-width: 1180px;
+  padding: 0 24px 64px;
+}
+
+main > .shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 56px;
+  align-items: start;
+  padding-top: var(--s-32);
+}
+
+.sidebar {
+  position: sticky;
+  top: calc(var(--nav-height) + 24px);
+  align-self: start;
+}
+
+.sidebar-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  margin: 0 0 var(--s-16);
+}
+
+.sidebar-name {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 var(--s-4);
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.sidebar-affiliation {
+  font-size: var(--fs-meta);
+  color: var(--text-muted);
+  margin: 0 0 var(--s-4);
+}
+
+.sidebar-tagline {
+  font-size: var(--fs-small);
+  color: var(--text-subtle);
+  margin: 0 0 var(--s-16);
+}
+
+.sidebar-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-8);
+}
+
+.sidebar-contact li {
+  display: flex;
+  align-items: center;
+  gap: var(--s-8);
+  font-size: var(--fs-meta);
+  color: var(--text-muted);
+}
+
+.sidebar-contact svg { flex: 0 0 auto; color: var(--text-muted); }
+
+.sidebar-contact a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.sidebar-contact a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Main column: re-establish section spacing (rules tied to `main > section` no longer match) */
+.main-col > section {
+  padding: var(--s-48) 0 0;
+}
+.main-col > section:first-child { padding-top: 0; }
+
+/* Section heading: underline like academic templates, sans-serif (override serif) */
+.main-col .section-heading {
+  font-family: var(--font-sans);
+  font-size: 1.625rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--s-8);
+  margin: 0 0 var(--s-24);
+  color: var(--text);
+}
+
+/* Section subheading (h3) inside a section */
+.main-col .section-subheading {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: var(--s-32) 0 var(--s-12);
+  color: var(--text);
+}
+
+/* Research-interests bullet list */
+.research-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 var(--s-16);
+}
+
+.research-list li {
+  margin-bottom: var(--s-12);
+  line-height: 1.65;
+}
+
+.research-list li strong {
+  color: var(--text);
+}
+
+/* Mobile collapse: stack sidebar above content, lose stickiness */
+@media (max-width: 900px) {
+  main { padding: 0 16px 48px; }
+
+  main > .shell {
+    grid-template-columns: 1fr;
+    gap: var(--s-32);
+    padding-top: var(--s-24);
+  }
+
+  .sidebar {
+    position: static;
+    text-align: left;
+  }
+
+  .sidebar-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
