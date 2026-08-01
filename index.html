@@ -35,7 +35,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -50,6 +50,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#news">News</a>
+        <a href="#teaching">Teaching</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Education</a>
         <a href="#honors">Honors</a>
@@ -74,14 +75,39 @@
     <!-- ============================ TWO-COLUMN SHELL ============================ -->
     <div id="top" class="shell">
 
+      <!-- ============================ DESKTOP NAVIGATION ============================ -->
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav-brand" href="#top" aria-label="Home">PD</a>
+        <div class="site-nav-links">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Education</a>
+          <a href="#honors">Honors</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle theme-toggle--sidebar" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </nav>
+
       <!-- ============================ SIDEBAR ============================ -->
       <aside class="sidebar" aria-label="Profile">
         <img class="sidebar-photo"
              src="assets/img/avatar.svg"
              alt="Portrait of Phan The Duy"
-             width="200" height="200" />
+             width="208" height="208" />
         <h2 class="sidebar-name">Phan The Duy</h2>
-        <p class="sidebar-affiliation">VNU-HCM University of Information Technology</p>
+        <p class="sidebar-affiliation">PhD Researcher · Cybersecurity</p>
+        <p class="sidebar-affiliation">
+          <a href="https://www.uit.edu.vn" target="_blank" rel="noopener">VNU-HCM University of Information Technology</a>
+        </p>
+        <p class="sidebar-affiliation">
+          <a href="https://inseclab.uit.edu.vn/" target="_blank" rel="noopener">Information Security Laboratory (InSecLab)</a>
+        </p>
 
         <ul class="sidebar-contact" aria-label="Contact and profiles">
           <li>
@@ -102,7 +128,7 @@
           </li>
           <li>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.73V17h2V9zm0 13.5L4 11v3.94L12 20l8-5.06V11z"/></svg>
-            <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://scholar.google.com/citations?user=HFzbk7AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
           </li>
         </ul>
       </aside>
@@ -184,6 +210,20 @@
       </ul>
     </section>
 
+    <!-- ============================ TEACHING ============================ -->
+    <section id="teaching" aria-labelledby="teaching-heading">
+      <h2 id="teaching-heading" class="section-heading">Teaching</h2>
+      <h3 class="section-subheading">Courses taught</h3>
+      <ul class="teaching-list">
+        <li><strong>NT521</strong><span aria-hidden="true">—</span><span>Lập trình an toàn và khai thác lỗ hổng phần mềm</span></li>
+        <li><strong>NT522</strong><span aria-hidden="true">—</span><span>Phương pháp học máy trong an toàn thông tin</span></li>
+        <li><strong>NT230</strong><span aria-hidden="true">—</span><span>Cơ chế hoạt động của mã độc</span></li>
+        <li><strong>NT2207</strong><span aria-hidden="true">—</span><span>Pháp chứng số trên máy tính và mạng</span></li>
+        <li><strong>NT2202</strong><span aria-hidden="true">—</span><span>Cơ chế hoạt động mã độc nâng cao</span></li>
+        <li><strong>IE105</strong><span aria-hidden="true">—</span><span>Nhập môn bảo đảm và an ninh thông tin</span></li>
+      </ul>
+    </section>
+
     <!-- ========================= PUBLICATIONS =========================
          ✏️ EDIT: copy a <article class="pub" data-year="YYYY"> block to add
          a new paper. Available badge classes: badge-arxiv, badge-pdf,
@@ -195,7 +235,7 @@
       <p class="meta">
         <span aria-label="equal contribution">*</span> equal contribution &nbsp;·&nbsp;
         <span aria-label="corresponding author">✉</span> corresponding author &nbsp;·&nbsp;
-        Full list on <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>.
+        Full list on <a href="https://scholar.google.com/citations?user=HFzbk7AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
       </p>
 
       <!-- Publications below auto-managed by scripts/hydrate-from-orcid.mjs. Do not edit between the markers; run the script locally or trigger the GitHub Actions workflow to regenerate. -->
@@ -439,7 +479,7 @@
       <article class="pub" data-year="2025">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1007/978-981-96-6008-7_22" target="_blank" rel="noopener">An Empirical Review of the Effectiveness of Different Language Processing Approaches in Software Code Vulnerability Detection</a></h4>
-          <p class="pub-authors">Tran Dinh, K., Bui Vuong Tam, A., Nguyen Vo Tien, L., Nguyen Phan Quoc, D., To, T.-N., The Duy, P., Pham, V.-H.</p>
+          <p class="pub-authors">Tran Dinh, K., Bui Vuong Tam, A., Nguyen Vo Tien, L., Nguyen Phan Quoc, D., To, T.-N., <strong>The Duy, P.</strong>, Pham, V.-H.</p>
           <p class="pub-venue"><em>Intelligent Information and Database Systems</em>, 2025</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1007/978-981-96-6008-7_22" target="_blank" rel="noopener">DOI</a></li>
@@ -494,7 +534,7 @@
       <article class="pub" data-year="2025">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1007/s11227-025-07198-7" target="_blank" rel="noopener">XGV-BERT: Leveraging contextualized language model and graph neural network for efficient software vulnerability detection</a></h4>
-          <p class="pub-authors">Quan, V.L.A., Phat, C.T., Van Nguyen, K., The Duy, P., Pham, V.-H.</p>
+          <p class="pub-authors">Quan, V.L.A., Phat, C.T., Van Nguyen, K., <strong>The Duy, P.</strong>, Pham, V.-H.</p>
           <p class="pub-venue"><em>Journal of Supercomputing</em>, 2025</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1007/s11227-025-07198-7" target="_blank" rel="noopener">DOI</a></li>
@@ -718,7 +758,7 @@
       <article class="pub" data-year="2023">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1145/3628797.3628982" target="_blank" rel="noopener">WebGuardRL: An Innovative Reinforcement Learning-based Approach for Advanced Web Attack Detection</a></h4>
-          <p class="pub-authors">Hien Do Hoang, Ha Nguyen Thi Hai, Hien Do Thi Thu, The Duy Phan, Van-Hau Pham</p>
+          <p class="pub-authors">Hien Do Hoang, Ha Nguyen Thi Hai, Hien Do Thi Thu, <strong>The Duy Phan</strong>, Van-Hau Pham</p>
           <p class="pub-venue"><em>SOICT 2023: The 12th International Symposium on Information and Communication Technology</em>, 2023</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1145/3628797.3628982" target="_blank" rel="noopener">DOI</a></li>
@@ -742,7 +782,7 @@
       <article class="pub" data-year="2022">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1145/3568562.3568631" target="_blank" rel="noopener">A Method of Mutating Windows Malwares using Reinforcement Learning with Functionality Preservation</a></h4>
-          <p class="pub-authors">Hien Do Thi Thu, The Duy Phan, Hao Le Anh, Lan Nguyen Duy, Khoa Nghi Hoang, Van-Hau Pham</p>
+          <p class="pub-authors">Hien Do Thi Thu, <strong>The Duy Phan</strong>, Hao Le Anh, Lan Nguyen Duy, Khoa Nghi Hoang, Van-Hau Pham</p>
           <p class="pub-venue"><em>SoICT 2022: The 11th International Symposium on Information and Communication Technology</em>, 2022</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1145/3568562.3568631" target="_blank" rel="noopener">DOI</a></li>
@@ -786,7 +826,7 @@
       <article class="pub" data-year="2022">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1145/3568562.3568629" target="_blank" rel="noopener">Leveraging Deep Learning Image Classifiers for Visual Similarity-based Phishing Website Detection</a></h4>
-          <p class="pub-authors">Nguyen Bac Trinh, The Duy Phan, Van-Hau Pham</p>
+          <p class="pub-authors">Nguyen Bac Trinh, <strong>The Duy Phan</strong>, Van-Hau Pham</p>
           <p class="pub-venue"><em>SoICT 2022: The 11th International Symposium on Information and Communication Technology</em>, 2022</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1145/3568562.3568629" target="_blank" rel="noopener">DOI</a></li>
@@ -797,7 +837,7 @@
       <article class="pub" data-year="2022">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1145/3568562.3568636" target="_blank" rel="noopener">Leveraging Reinforcement Learning and Generative Adversarial Networks to Craft Mutants of Windows Malware against Black-box Malware Detectors</a></h4>
-          <p class="pub-authors">The Duy Phan, Tran Duc Luong, Nguyen Hoang Quoc An, Quyen Nguyen Huu, Hoang Khoa Nghi, Van-Hau Pham</p>
+          <p class="pub-authors"><strong>The Duy Phan</strong>, Tran Duc Luong, Nguyen Hoang Quoc An, Quyen Nguyen Huu, Hoang Khoa Nghi, Van-Hau Pham</p>
           <p class="pub-venue"><em>SoICT 2022: The 11th International Symposium on Information and Communication Technology</em>, 2022</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1145/3568562.3568636" target="_blank" rel="noopener">DOI</a></li>
@@ -832,7 +872,7 @@
       <article class="pub" data-year="2021">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1007/978-3-030-69514-9_11" target="_blank" rel="noopener">CVSS Based Attack Analysis Using a Graphical Security Model: Review and Smart Grid Case Study</a></h4>
-          <p class="pub-authors">Duy Le, T., Ge, M., The Duy, P., Do Hoang, H., Anwar, A., Loke, S.W., Beuran, R., Tan, Y.</p>
+          <p class="pub-authors">Duy Le, T., Ge, M., <strong>The Duy, P.</strong>, Do Hoang, H., Anwar, A., Loke, S.W., Beuran, R., Tan, Y.</p>
           <p class="pub-venue"><em>Lecture Notes of the Institute for Computer Sciences Social Informatics and Telecommunications Engineering Lnicst</em>, 2021</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1007/978-3-030-69514-9_11" target="_blank" rel="noopener">DOI</a></li>
@@ -910,7 +950,7 @@
       <article class="pub" data-year="2020">
         <div class="pub-body">
           <h4 class="pub-title"><a href="https://doi.org/10.1109/RIVF48685.2020.9140739" target="_blank" rel="noopener">Forensic analysis of TikTok application to seek digital artifacts on Android smartphone</a></h4>
-          <p class="pub-authors">Hoang Khoa, N., The Duy, P., Do Hoang, H., Thi Thu Hien, D., Pham, V.-H.</p>
+          <p class="pub-authors">Hoang Khoa, N., <strong>The Duy, P.</strong>, Do Hoang, H., Thi Thu Hien, D., Pham, V.-H.</p>
           <p class="pub-venue"><em>Proceedings 2020 Rivf International Conference on Computing and Communication Technologies Rivf 2020</em>, 2020</p>
           <ul class="badge-row" aria-label="Paper links">
             <li><a class="badge badge-pdf" href="https://doi.org/10.1109/RIVF48685.2020.9140739" target="_blank" rel="noopener">DOI</a></li>
@@ -964,6 +1004,7 @@
       <ul class="contact-list">
         <li><span class="contact-label">Email</span><a href="mailto:phantheduy.ptd@gmail.com">phantheduy.ptd@gmail.com</a></li>
         <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/phantheduy/" target="_blank" rel="noopener">linkedin.com/in/phantheduy</a></li>
+        <li><span class="contact-label">Google Scholar</span><a href="https://scholar.google.com/citations?user=HFzbk7AAAAAJ&hl=en" target="_blank" rel="noopener">scholar.google.com</a></li>
         <li><span class="contact-label">ORCID</span><a href="https://orcid.org/0000-0002-5945-3712" target="_blank" rel="noopener">0000-0002-5945-3712</a></li>
       </ul>
     </section>
@@ -974,7 +1015,7 @@
   </main>
 
   <footer class="site-footer" role="contentinfo">
-    <p>Last updated: May 2026</p>
+    <p>Last updated: August 2026</p>
     <p>&copy; 2026 Phan The Duy · Built with HTML, CSS &amp; care · <a href="#top">Back to top ↑</a></p>
     <p class="meta" style="font-size: 0.8125rem; opacity: 0.7;">Site maintained by <a href="https://github.com/lengo0951" target="_blank" rel="noopener">@lengo0951</a> · publications auto-synced from <a href="https://orcid.org/0000-0002-5945-3712" target="_blank" rel="noopener">ORCID</a></p>
   </footer>

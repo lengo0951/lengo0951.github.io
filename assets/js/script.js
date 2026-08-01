@@ -6,26 +6,28 @@
   'use strict';
 
   const root = document.documentElement;
-  const toggle = document.getElementById('theme-toggle');
+  const toggles = document.querySelectorAll('.theme-toggle');
 
   /* ---------- Theme toggle (persisted) ---------- */
   function applyTheme(t) {
     root.setAttribute('data-theme', t);
-    if (toggle) toggle.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+    toggles.forEach(function (toggle) {
+      toggle.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+    });
   }
   // Sync initial aria-pressed (root may already have data-theme from inline boot script)
   applyTheme(root.getAttribute('data-theme') || 'light');
 
-  if (toggle) {
+  toggles.forEach(function (toggle) {
     toggle.addEventListener('click', function () {
       const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
       applyTheme(next);
     });
-  }
+  });
 
   /* ---------- Scroll-spy: highlight active nav link ---------- */
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"], .site-nav-links a[href^="#"]');
   const sectionIds = Array.from(navLinks).map(a => a.getAttribute('href').slice(1));
   const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
 

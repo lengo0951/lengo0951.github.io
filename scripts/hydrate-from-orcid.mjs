@@ -336,7 +336,10 @@ async function main() {
   try { works = await fetchAllWorks(cfg.orcid); }
   catch (e) { fail(`ORCID fetch failed: ${e.message}`); }
 
+  // ORCID works list is the source of truth — include every work on this profile.
+  // name_pattern is only used later to bold the teacher's name when present.
   const pubs = works.map(shape);
+
   // Attach extras by DOI (case-insensitive)
   let matched = 0;
   for (const p of pubs) {

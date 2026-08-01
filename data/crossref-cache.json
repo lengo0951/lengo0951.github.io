@@ -340,5 +340,41 @@
     "publisher": "IEEE",
     "crossrefType": "proceedings-article",
     "fetchedAt": "2026-05-06T05:28:11.292Z"
+  },
+  "10.1016/j.eswa.2026.133417": {
+    "venue": "Expert Systems with Applications",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-08-01T04:05:57.563Z"
+  },
+  "10.1016/j.compeleceng.2026.111349": {
+    "venue": "Computers and Electrical Engineering",
+    "publisher": "Elsevier BV",
+    "crossrefType": "journal-article",
+    "fetchedAt": "2026-08-01T04:05:58.062Z"
+  },
+  "10.1007/978-981-95-9284-5_4": {
+    "venue": "Information Security Practice and Experience",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-08-01T04:05:58.551Z"
+  },
+  "10.1007/978-981-95-9284-5_18": {
+    "venue": "Information Security Practice and Experience",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-08-01T04:05:59.037Z"
+  },
+  "10.1007/978-981-95-9284-5_15": {
+    "venue": "Information Security Practice and Experience",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-08-01T04:05:59.526Z"
+  },
+  "10.1007/978-981-92-0263-8_39": {
+    "venue": "Recent Challenges in Intelligent Information and Database Systems",
+    "publisher": "Springer Nature Singapore",
+    "crossrefType": "book-chapter",
+    "fetchedAt": "2026-08-01T04:06:00.011Z"
   }
 }
